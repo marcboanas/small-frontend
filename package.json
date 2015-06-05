@@ -45,6 +45,7 @@
     "watchify": "^2.2.0"
   },
   "scripts": {
-    "start": "node app"
+    "start": "node index.html",
+    "postinstall": "bower install"
   }
 }
