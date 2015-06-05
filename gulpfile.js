@@ -31,6 +31,8 @@ var gulp = require('gulp'),
       distFont: 'dist/fonts'
     };
 
+var runSeq = require('run-sequence');
+
 gulp.task('clean', function(cb) {
   del(['dist'], cb);
 });
