@@ -147,3 +147,6 @@ gulp.task('default', function() {
   console.log('Run "gulp watch or gulp build"');
 });
 
+gulp.task('heroku:production', function(){
+  runSeq('clean', 'build', 'minify')
+});
