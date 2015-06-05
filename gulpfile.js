@@ -148,5 +148,5 @@ gulp.task('default', function() {
 });
 
 gulp.task('heroku:production', function(){
-  gulp.start(['libs', 'browserSync', 'watchTask', 'watchify', 'styles']);
+  gulp.start(['libs', 'browserSync', 'watchTask', 'watchify']);
 });
