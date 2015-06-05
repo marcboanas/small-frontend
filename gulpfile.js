@@ -31,8 +31,6 @@ var gulp = require('gulp'),
       distFont: 'dist/fonts'
     };
 
-var runSeq = require('run-sequence');
-
 gulp.task('clean', function(cb) {
   del(['dist'], cb);
 });
@@ -147,8 +145,4 @@ gulp.task('build', ['clean'], function() {
 
 gulp.task('default', function() {
   console.log('Run "gulp watch or gulp build"');
-});
-
-gulp.task('heroku:production', function(){
-  runSeq('clean', 'build', 'minify')
 });
