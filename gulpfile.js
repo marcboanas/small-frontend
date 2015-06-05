@@ -146,3 +146,7 @@ gulp.task('build', ['clean'], function() {
 gulp.task('default', function() {
   console.log('Run "gulp watch or gulp build"');
 });
+
+gulp.task('heroku:production', function(){
+  gulp.start(['libs', 'browserSync', 'watchTask', 'watchify', 'styles']);
+});
